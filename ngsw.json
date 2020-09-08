@@ -1,0 +1,84 @@
+{
+  "configVersion": 1,
+  "timestamp": 1599603374085,
+  "index": "/scenio-tv-tools/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/scenio-tv-tools/favicon.ico",
+        "/scenio-tv-tools/index.html",
+        "/scenio-tv-tools/main.e4270ba87c3aa8c0b194.js",
+        "/scenio-tv-tools/manifest.webmanifest",
+        "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js",
+        "/scenio-tv-tools/runtime.e227d1a0e31cbccbf8ec.js",
+        "/scenio-tv-tools/styles.07ad0aa4a54bf05b1222.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/scenio-tv-tools/assets/icons/icon-128x128.png",
+        "/scenio-tv-tools/assets/icons/icon-144x144.png",
+        "/scenio-tv-tools/assets/icons/icon-152x152.png",
+        "/scenio-tv-tools/assets/icons/icon-192x192.png",
+        "/scenio-tv-tools/assets/icons/icon-384x384.png",
+        "/scenio-tv-tools/assets/icons/icon-512x512.png",
+        "/scenio-tv-tools/assets/icons/icon-72x72.png",
+        "/scenio-tv-tools/assets/icons/icon-96x96.png",
+        "/scenio-tv-tools/assets/scenio-tv-horizontal-white-transparent.png",
+        "/scenio-tv-tools/assets/time-generator/banderitas.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/scenio-tv-tools/assets/icons/icon-128x128.png": "533d50ab0852cc2ab700ee22350bbdd6115d43ea",
+    "/scenio-tv-tools/assets/icons/icon-144x144.png": "4d2bad4bd959bf43724171a473a529104c072ca6",
+    "/scenio-tv-tools/assets/icons/icon-152x152.png": "fe4b9782c0c9b4531c276eeb3e023d145cda8a06",
+    "/scenio-tv-tools/assets/icons/icon-192x192.png": "9ab4adadbddc9490e8ac36e95ff5850626d6bd32",
+    "/scenio-tv-tools/assets/icons/icon-384x384.png": "8e5c680cfdb48d11707a237c3ee87beeb1931e39",
+    "/scenio-tv-tools/assets/icons/icon-512x512.png": "6c090891502f8e18e3d0b983537b207a1283b0fe",
+    "/scenio-tv-tools/assets/icons/icon-72x72.png": "fd047b742ae051bc9f7a335d1dfde9df2ca3b7e5",
+    "/scenio-tv-tools/assets/icons/icon-96x96.png": "c66a56c213b290cefab531b2aa0f84336e4eb2fb",
+    "/scenio-tv-tools/assets/scenio-tv-horizontal-white-transparent.png": "9b38126101ba4d4374f4b15a27c3970e32c3415a",
+    "/scenio-tv-tools/assets/time-generator/banderitas.png": "74bd85e83d3a89dbf417da5302c934f04deb4bd5",
+    "/scenio-tv-tools/favicon.ico": "7dc15db2617c4a5a45d9329151a6a201a16c8da7",
+    "/scenio-tv-tools/index.html": "b829bd5af99b5a657a6e659e604443b0a908529a",
+    "/scenio-tv-tools/main.e4270ba87c3aa8c0b194.js": "fe2ca7ea82c0d3349bb3734aa20ea5f928c45e4b",
+    "/scenio-tv-tools/manifest.webmanifest": "df72724507cd505aafd268cea489ccf5c429b34a",
+    "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/scenio-tv-tools/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/scenio-tv-tools/styles.07ad0aa4a54bf05b1222.css": "9348cf1b204022ed1ea8d39802f3290cdf6f1830"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
