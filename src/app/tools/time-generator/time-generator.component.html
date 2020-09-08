@@ -1,0 +1,49 @@
+<h2>Generador de horarios</h2>
+<p>Con esta utilidad puedes generar una imagen con los diferentes horarios de los paises de habla hispana. Introduce la hora, sube tu imagen en <b>600x600</b> y se generará la nueva imagen</p>
+<form [formGroup]="profileForm" class="vertical-form">
+  <mat-form-field class="field-full-width">
+    <mat-label>Hora española (hh:mm) </mat-label>
+    <input matInput placeholder="19:00" formControlName="hourString">
+  </mat-form-field>
+  <mat-form-field class="field-full-width">
+    <mat-label>Título (opcional, máx 45 caracteres) </mat-label>
+    <input matInput placeholder="Título" formControlName="title">
+  </mat-form-field>
+  <mat-slide-toggle formControlName="showAdvancedOptions">Mostrar opciones avanzadas</mat-slide-toggle>
+  <div id="advancedOptions" [class.hidden]="!profileForm.get('showAdvancedOptions').value">
+    <p>Selección del dia de emisión del programa. Esto hará que se tengan en cuentan posibles cambios de horas por ahorro de energia.</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Selecciona una fecha</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="datetime">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="margin-top:10px">
+    <div *ngIf="imgURL" style="text-align:center;">
+      <h3>Imagen subida</h3>
+      <img [src]="imgURL" height="200">
+    </div>
+    <button mat-raised-button color="accent" (click)="fileInput.click()" type="button">
+      <span *ngIf="imgURL">Cambiar imagen</span>
+      <span *ngIf="!imgURL">Subir imagen</span>
+      <input #fileInput type="file" accept='image/*' (change)="onFileInput(fileInput.files)" style="display:none;" />
+    </button>
+    <p *ngIf="imageErrorLoading">
+      <span style="color:red;">{{imageErrorLoading}}</span>
+    </p>
+  </div>
+  <br/>
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <button mat-raised-button color="accent" [disabled]="!imgURL || profileForm.invalid" (click)="getImageWithText()"> Generar imagen </button>
+    <button mat-raised-button color="primary" [disabled]="!finalImageSrc" (click)="downloadImage()"> Descargar imagen </button>
+  </div>
+</form>
+
+<div *ngIf="finalImageSrc">
+  <h3>Vistas previa:</h3>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <img id="result" [src]="finalImageSrc" style="max-width: 80vw;"/>
+  </div>
+</div>
