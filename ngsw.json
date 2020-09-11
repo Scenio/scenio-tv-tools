@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599819319619,
+  "timestamp": 1599820074841,
   "index": "/scenio-tv-tools/index.html",
   "assetGroups": [
     {
@@ -52,7 +52,7 @@
   "dataGroups": [],
   "hashTable": {
     "/scenio-tv-tools/assets/icons/apple-touch-icon.png": "e1f23637555d5b723b90cf6b011d49671c35a046",
-    "/scenio-tv-tools/assets/icons/browserconfig.xml": "30eda380cff31f3f0f92e6cacdfcf73d67094696",
+    "/scenio-tv-tools/assets/icons/browserconfig.xml": "2eda6332ff90cd092cf3897eb766b027c9be2436",
     "/scenio-tv-tools/assets/icons/favicon-16x16.png": "9f18264746efe696a19e1a3b0052859feb9f0bab",
     "/scenio-tv-tools/assets/icons/favicon-32x32.png": "8276b19834482b969824fc76b02be80b45e010c5",
     "/scenio-tv-tools/assets/icons/icon-128x128.png": "533d50ab0852cc2ab700ee22350bbdd6115d43ea",
@@ -68,7 +68,7 @@
     "/scenio-tv-tools/assets/scenio-tv-horizontal-white-transparent.png": "9b38126101ba4d4374f4b15a27c3970e32c3415a",
     "/scenio-tv-tools/assets/time-generator/banderitas.png": "74bd85e83d3a89dbf417da5302c934f04deb4bd5",
     "/scenio-tv-tools/favicon.ico": "7dc15db2617c4a5a45d9329151a6a201a16c8da7",
-    "/scenio-tv-tools/index.html": "bc2fb2c3c5507f5db18f7e17b2d3cb511d94e3b4",
+    "/scenio-tv-tools/index.html": "53c9982662a94a09e40b0978eaa93d768ff40b6b",
     "/scenio-tv-tools/main.e4270ba87c3aa8c0b194.js": "fe2ca7ea82c0d3349bb3734aa20ea5f928c45e4b",
     "/scenio-tv-tools/manifest.webmanifest": "df72724507cd505aafd268cea489ccf5c429b34a",
     "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
