@@ -26,13 +26,15 @@ import { MatDayjsDateModule } from '@vanrossumict/material-dayjs-adapter';
 /* Project imports*/
 import { HomeComponent } from './home/home.component';
 import { TimeGeneratorComponent } from './tools/time-generator/time-generator.component';
+import { EditorPanelComponent } from './tools/editor-panel/editor-panel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TimeGeneratorComponent
+    TimeGeneratorComponent,
+    EditorPanelComponent,
   ],
   imports: [
     BrowserModule,
