@@ -18,15 +18,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDayjsDateModule } from '@vanrossumict/material-dayjs-adapter';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 /* Project imports*/
 import { HomeComponent } from './home/home.component';
 import { TimeGeneratorComponent } from './tools/time-generator/time-generator.component';
 import { EditorPanelComponent } from './tools/editor-panel/editor-panel.component';
+import { StreamAdvicesComponent } from './tools/stream-advices/stream-advices.component';
 
 
 @NgModule({
@@ -35,6 +37,7 @@ import { EditorPanelComponent } from './tools/editor-panel/editor-panel.componen
     HomeComponent,
     TimeGeneratorComponent,
     EditorPanelComponent,
+    StreamAdvicesComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,7 @@ import { EditorPanelComponent } from './tools/editor-panel/editor-panel.componen
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     FlexLayoutModule,
     ReactiveFormsModule,
-    /*Angular imports*/
+    /*Material imports*/
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -53,7 +56,8 @@ import { EditorPanelComponent } from './tools/editor-panel/editor-panel.componen
     MatInputModule,
     MatSlideToggleModule,
     MatDatepickerModule,
-    MatDayjsDateModule
+    MatDayjsDateModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
