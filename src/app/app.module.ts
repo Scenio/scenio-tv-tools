@@ -22,6 +22,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDayjsDateModule } from '@vanrossumict/material-dayjs-adapter';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MccColorPickerModule } from 'material-community-components/color-picker';
 
 
 /* Project imports*/
@@ -29,6 +31,7 @@ import { HomeComponent } from './home/home.component';
 import { TimeGeneratorComponent } from './tools/time-generator/time-generator.component';
 import { EditorPanelComponent } from './tools/editor-panel/editor-panel.component';
 import { StreamAdvicesComponent } from './tools/stream-advices/stream-advices.component';
+import { StreamChatCustomizationComponent } from './tools/stream-chat-customization/stream-chat-customization.component';
 
 
 @NgModule({
@@ -37,7 +40,8 @@ import { StreamAdvicesComponent } from './tools/stream-advices/stream-advices.co
     HomeComponent,
     TimeGeneratorComponent,
     EditorPanelComponent,
-    StreamAdvicesComponent
+    StreamAdvicesComponent,
+    StreamChatCustomizationComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,13 @@ import { StreamAdvicesComponent } from './tools/stream-advices/stream-advices.co
     MatSlideToggleModule,
     MatDatepickerModule,
     MatDayjsDateModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTabsModule,
+    MccColorPickerModule.forRoot({
+      empty_color: 'white',
+      used_colors: ['#000000', '#FFF555'],
+      enable_alpha_selector: true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,95 @@
+<div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px">
+  <h2>Personalizar el chat de OBS</h2>
+  <div>
+    <p>
+      Con esta herramienta podrás modificar facilmente el formato del texto del
+      chat. Juega con los diferentes parámetros y obtendrás el código CSS
+      personalizado que posteriormente deberás introducir en la ventana
+      correspondiente de SteamlabsOBS y OBS.
+    </p>
+    <p>
+      Por defecto, la ventana del chat los mensajes aparecen con una tipografía
+      estándar, en color negro y con fondo transparente. No obstante, las
+      características del texto pueden modificarse para adecuarse al layout de
+      cada programa.
+    </p>
+  </div>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-around strech" fxLayoutGap="10px">
+  <h3>Configuración:</h3>
+  <div>
+    <form [formGroup]="streamChatConfigurationForm" class="vertical-form">
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" style="min-height: 50px;">
+        <mat-slide-toggle formControlName="activateCustomSizeFont"
+          >Tamaño de la fuente:
+        </mat-slide-toggle>
+        <mat-form-field >
+          <mat-label>Tamaño (px)</mat-label>
+          <input matInput placeholder="25 (default)" formControlName="fontSize">
+        </mat-form-field>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px"  style="min-height: 50px;">
+        <mat-slide-toggle formControlName="activateCustomColorFont"
+          >Color de los mensajes:
+        </mat-slide-toggle>
+        <mcc-color-picker btnConfirmLabel="Confirmar" btnCancelLabel="Cancelar" hideUsedColors=true mccConnectedColorPicker [mccConnectedColorPickerOrigin]="fontColorSelectorConnection"></mcc-color-picker>
+        <input hidden formControlName="fontColor" mccColorPickerOrigin #fontColorSelectorConnection="mccColorPickerOrigin">
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px" style="min-height: 50px;">
+        <mat-slide-toggle formControlName="activateCustomBgColor"
+          >Color de fondo:
+        </mat-slide-toggle>
+        <mcc-color-picker btnConfirmLabel="Confirmar" btnCancelLabel="Cancelar" hideUsedColors=true mccConnectedColorPicker [mccConnectedColorPickerOrigin]="bgColorSelectorConnection"></mcc-color-picker>
+        <input hidden formControlName="bgColor" mccColorPickerOrigin #bgColorSelectorConnection="mccColorPickerOrigin">
+      </div>
+    </form>
+  </div>
+  <div>
+    <h3>Código:</h3>
+    <div class="preview code">
+      body {{ '{' }} margin: 0px auto; overflow: hidden; background-color: {{ this.streamChatConfigurationForm.get('bgColor').value }}; }
+  </div>
+  <div>
+    <h3>Previsualización:</h3>
+    <div class="preview" [ngStyle]="{'font-size': getFontSize(), 'background-color': getBgColor()}">
+      <table id="tablechat">
+          <tr>
+              <td class="user" style="color: darkturquoise">Alice_rsa</td>
+              <td></td>
+              <td class="message" [ngStyle]="{'color': getFontColor()}">Hola don Pepito. Hola don José.</td>
+          </tr>
+          <tr>
+              <td class="user" style="color: blueviolet">Bob1726</td>
+              <td></td>
+              <td class="message" [ngStyle]="{'color': getFontColor()}">El patio de mi casa es particular, cuando llueve se moja como los demás XD</td>
+          </tr>
+          <tr>
+              <td class="user" style="color: darksalmon">EvanescaVipera</td>
+              <td></td>
+              <td class="message" [ngStyle]="{'color': getFontColor()}">Había una vez un circo que alegraba siempre el corazón.</td>
+          </tr>
+      </table>
+  </div>
+</div>
+<div fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="10px">
+  <h2>¿Donde pongo el código?</h2>
+  <div>
+    <p>
+      El código generado podeis colocarlo en el apartado "CSS Personalizado" de la fuente de navegador que usais para introducir el chat en OBS. En las siguientes imagenes podeis ver cual es ese apartado tanto en Streamlabs Obs como en OBS Studio.
+    </p>
+  </div>
+  <mat-tab-group mat-stretch-tabs>
+    <mat-tab label="Streamlabs OBS">
+      <img
+        src="assets/stream-chat-customization/slobs-configuration.png"
+        style="max-width: 30vw"
+      />
+    </mat-tab>
+    <mat-tab label="OBS Studio">
+      <img
+        src="assets/stream-chat-customization/slobs-configuration.png"
+        style="max-width: 30vw"
+      />
+    </mat-tab>
+  </mat-tab-group>
+</div>
