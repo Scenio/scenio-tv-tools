@@ -1,27 +1,17 @@
-# ScenioTools
+# ScenioTv Tools
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+Este es el repositorio de ScenioTV Tools, una "Aplicación Web Progresiva" que contiene diferente utilidades e información de ayuda para los programas de ScenioTV en Twitch hecha con Angular que no requiere de backend, desplegada en Github Pages.
 
-## Development server
+## Utilidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Las utilidades actuales son:
 
-## Code scaffolding
+  - Generador de horarios: genera una imagen para redes sociales con los diferentes horarios hispanohablantes.
+  - Panel de editor: información sobre el panel de editor de Twitch y acceso al mismo.
+  - Personalizar Chat OBS: permite generar el código CSS ha incluir en OBS para personalizar el chat.
+  - Sugerencias de emisión: una serie de pautas a tener en cuenta durante la emisión de un programa.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Agradecimientos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+A [TeoremaPi](https://github.com/TeoremaPi) por su código para el [generador de CSS](https://github.com/TeoremaPi/Ayuda-CSS-Streamlabs)

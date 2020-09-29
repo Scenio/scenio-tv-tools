@@ -47,26 +47,29 @@
   <div>
     <h3>Código:</h3>
     <div class="preview code">
-      body {{ '{' }} margin: 0px auto; overflow: hidden; background-color: {{ this.streamChatConfigurationForm.get('bgColor').value }}; }
+      body {{ '{' }} margin: 0px auto; overflow: hidden; background-color: {{ bgColor }}; <span *ngIf="activateCustomSizeFont">font-size: {{ fontSize }};</span>}
+      <br/>
+      <br/>
+      <span *ngIf="activateCustomColorFont">.message {{ '{' }} color: {{fontColor}}; }</span>
   </div>
   <div>
     <h3>Previsualización:</h3>
-    <div class="preview" [ngStyle]="{'font-size': getFontSize(), 'background-color': getBgColor()}">
+    <div class="preview" [ngStyle]="{'font-size': fontSize, 'background-color': bgColor}">
       <table id="tablechat">
           <tr>
               <td class="user" style="color: darkturquoise">Alice_rsa</td>
               <td></td>
-              <td class="message" [ngStyle]="{'color': getFontColor()}">Hola don Pepito. Hola don José.</td>
+              <td class="message" [ngStyle]="{'color': fontColor}">Hola don Pepito. Hola don José.</td>
           </tr>
           <tr>
               <td class="user" style="color: blueviolet">Bob1726</td>
               <td></td>
-              <td class="message" [ngStyle]="{'color': getFontColor()}">El patio de mi casa es particular, cuando llueve se moja como los demás XD</td>
+              <td class="message" [ngStyle]="{'color': fontColor}">El patio de mi casa es particular, cuando llueve se moja como los demás XD</td>
           </tr>
           <tr>
               <td class="user" style="color: darksalmon">EvanescaVipera</td>
               <td></td>
-              <td class="message" [ngStyle]="{'color': getFontColor()}">Había una vez un circo que alegraba siempre el corazón.</td>
+              <td class="message" [ngStyle]="{'color': fontColor}">Había una vez un circo que alegraba siempre el corazón.</td>
           </tr>
       </table>
   </div>
@@ -78,18 +81,24 @@
       El código generado podeis colocarlo en el apartado "CSS Personalizado" de la fuente de navegador que usais para introducir el chat en OBS. En las siguientes imagenes podeis ver cual es ese apartado tanto en Streamlabs Obs como en OBS Studio.
     </p>
   </div>
+  <div class="tab-height-fix">
   <mat-tab-group mat-stretch-tabs>
     <mat-tab label="Streamlabs OBS">
+      <div fxLayout="column" fxLayoutAlign="center center">
       <img
         src="assets/stream-chat-customization/slobs-configuration.png"
-        style="max-width: 30vw"
+        style="padding: 20px; max-width: 80vw;"
       />
+      </div>
     </mat-tab>
     <mat-tab label="OBS Studio">
+      <div fxLayout="column" fxLayoutAlign="center center">
       <img
-        src="assets/stream-chat-customization/slobs-configuration.png"
-        style="max-width: 30vw"
+        src="assets/stream-chat-customization/obs-configuration.png"
+        style="padding: 20px; max-width: 80vw;"
       />
+      </div>
     </mat-tab>
   </mat-tab-group>
+  </div>
 </div>
