@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1600595832451,
+  "timestamp": 1601415043770,
   "index": "/scenio-tv-tools/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/scenio-tv-tools/favicon.ico",
         "/scenio-tv-tools/index.html",
-        "/scenio-tv-tools/main.18cefc1679a0887aee29.js",
+        "/scenio-tv-tools/main.91fadc0cf4cd418e23f6.js",
         "/scenio-tv-tools/manifest.webmanifest",
         "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js",
         "/scenio-tv-tools/runtime.e227d1a0e31cbccbf8ec.js",
-        "/scenio-tv-tools/styles.07ad0aa4a54bf05b1222.css"
+        "/scenio-tv-tools/styles.bdd78db36e1bef006df6.css"
       ],
       "patterns": []
     },
@@ -45,6 +45,8 @@
         "/scenio-tv-tools/assets/icons/safari-pinned-tab.svg",
         "/scenio-tv-tools/assets/panel-editor/panel-editor-screen.png",
         "/scenio-tv-tools/assets/scenio-tv-horizontal-white-transparent.png",
+        "/scenio-tv-tools/assets/stream-chat-customization/obs-configuration.png",
+        "/scenio-tv-tools/assets/stream-chat-customization/slobs-configuration.png",
         "/scenio-tv-tools/assets/time-generator/banderitas.png"
       ],
       "patterns": []
@@ -68,14 +70,16 @@
     "/scenio-tv-tools/assets/icons/safari-pinned-tab.svg": "e61be7d196c73e03a225d3df49087c4dc3d92045",
     "/scenio-tv-tools/assets/panel-editor/panel-editor-screen.png": "6ff0c15691ccf997e3d19a66eef1a62d9dd9148d",
     "/scenio-tv-tools/assets/scenio-tv-horizontal-white-transparent.png": "9b38126101ba4d4374f4b15a27c3970e32c3415a",
+    "/scenio-tv-tools/assets/stream-chat-customization/obs-configuration.png": "2633753f4cdbdeb77ac0bbb8bdfa650a5fb5fa08",
+    "/scenio-tv-tools/assets/stream-chat-customization/slobs-configuration.png": "29f3b5e94bf771e75749fbb0b9a8a6ab1b76ea5f",
     "/scenio-tv-tools/assets/time-generator/banderitas.png": "74bd85e83d3a89dbf417da5302c934f04deb4bd5",
     "/scenio-tv-tools/favicon.ico": "7dc15db2617c4a5a45d9329151a6a201a16c8da7",
-    "/scenio-tv-tools/index.html": "a4e8cfc13183c68b6a5bdbd32c3b156ee435b18e",
-    "/scenio-tv-tools/main.18cefc1679a0887aee29.js": "a61f462768b862eba6193d3170697fa1f47419b5",
-    "/scenio-tv-tools/manifest.webmanifest": "df72724507cd505aafd268cea489ccf5c429b34a",
+    "/scenio-tv-tools/index.html": "c7f64fe3910f021c3f15b22195dfe91d9b369bd9",
+    "/scenio-tv-tools/main.91fadc0cf4cd418e23f6.js": "b59976954aec74dceb9143bda7dd48a52187aa21",
+    "/scenio-tv-tools/manifest.webmanifest": "12db077735f26a50c0a1a48e325e53d99b1c5c9a",
     "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/scenio-tv-tools/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/scenio-tv-tools/styles.07ad0aa4a54bf05b1222.css": "9348cf1b204022ed1ea8d39802f3290cdf6f1830"
+    "/scenio-tv-tools/styles.bdd78db36e1bef006df6.css": "f701a823c4dac8b5b12b0ca410c6c26c898ca997"
   },
   "navigationUrls": [
     {
