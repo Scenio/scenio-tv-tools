@@ -24,10 +24,13 @@
     "@angular/platform-browser-dynamic": "~10.0.14",
     "@angular/router": "~10.0.14",
     "@angular/service-worker": "~10.0.14",
+    "@thebespokepixel/es-tinycolor": "^2.1.1",
     "@vanrossumict/material-dayjs-adapter": "0.0.10",
     "dayjs": "^1.8.34",
+    "material-community-components": "^9.0.0",
     "merge-images": "^2.0.0",
     "rxjs": "~6.5.5",
+    "tinycolor2": "^1.4.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

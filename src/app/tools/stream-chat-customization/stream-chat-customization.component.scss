@@ -1,0 +1,44 @@
+.field-full-width {
+  width: 100%;
+}
+
+.form-line {
+  margin-top: 10px;
+}
+
+.preview {
+  padding: 10px;
+  border: black 1px solid;
+}
+
+.code {
+
+  font-family: monospace;
+  font-size: large;
+}
+
+@media screen and (max-width: 599px) {
+  .tab-height-fix{
+    min-height: 600px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .tab-height-fix{
+    min-height: 600px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px){
+  .tab-height-fix{
+    min-height: 800px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1919px){
+  .tab-height-fix{
+    min-height: 800px;
+  }
+}
+@media screen and (min-width: 1920px) and (max-width: 5000px){
+  .tab-height-fix{
+    min-height: 800px;
+  }
+}
