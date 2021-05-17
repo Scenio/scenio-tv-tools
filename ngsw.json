@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1601416411862,
+  "timestamp": 1621269534111,
   "index": "/scenio-tv-tools/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/scenio-tv-tools/favicon.ico",
         "/scenio-tv-tools/index.html",
-        "/scenio-tv-tools/main.b953b493d2e15a07b956.js",
+        "/scenio-tv-tools/main.179f201187625f0c5b11.js",
         "/scenio-tv-tools/manifest.webmanifest",
         "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js",
         "/scenio-tv-tools/runtime.e227d1a0e31cbccbf8ec.js",
@@ -72,10 +72,10 @@
     "/scenio-tv-tools/assets/scenio-tv-horizontal-white-transparent.png": "9b38126101ba4d4374f4b15a27c3970e32c3415a",
     "/scenio-tv-tools/assets/stream-chat-customization/obs-configuration.png": "2633753f4cdbdeb77ac0bbb8bdfa650a5fb5fa08",
     "/scenio-tv-tools/assets/stream-chat-customization/slobs-configuration.png": "29f3b5e94bf771e75749fbb0b9a8a6ab1b76ea5f",
-    "/scenio-tv-tools/assets/time-generator/banderitas.png": "74bd85e83d3a89dbf417da5302c934f04deb4bd5",
+    "/scenio-tv-tools/assets/time-generator/banderitas.png": "9890bf4f3ab08e85470df756e51f467ec18cbfca",
     "/scenio-tv-tools/favicon.ico": "7dc15db2617c4a5a45d9329151a6a201a16c8da7",
-    "/scenio-tv-tools/index.html": "26e74733a40ee11a49be55011e601eb986476d3b",
-    "/scenio-tv-tools/main.b953b493d2e15a07b956.js": "b6ab82b5b517c53b4075a7fa56c589f03b0a0e87",
+    "/scenio-tv-tools/index.html": "a492108a11c3a97981899998d20657f202c8d004",
+    "/scenio-tv-tools/main.179f201187625f0c5b11.js": "1cbf4c7991a119e790cfccc05ea32a73c9a1f750",
     "/scenio-tv-tools/manifest.webmanifest": "12db077735f26a50c0a1a48e325e53d99b1c5c9a",
     "/scenio-tv-tools/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/scenio-tv-tools/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
