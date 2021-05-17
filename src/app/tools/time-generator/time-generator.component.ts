@@ -120,6 +120,7 @@ export class TimeGeneratorComponent implements OnInit {
     let minute = parseInt(regexResult[2]);
 
     var now = this.profileForm.get('datetime').value;
+    now = now.tz('Europe/Madrid');
     now = now.hour(hour);
     now = now.minute(minute);
     now = now.second(0);
